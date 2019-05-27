@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../Downloads/out/ODDproject-3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../Downloads/out/ODDproject-3.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="a">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title notBefore-iso="1400" notAfter-iso="1425">
+               <!-- optional when-iso -->
+            </title>
+            <author/>
+            <editor/>
+            <respStmt>
+               <resp>Encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>
+               <!-- Project--></publisher>
+            <date><!-- Beginning-end --></date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:lang="la" facs="0" xml:id="bnfLat7920">
+               <!-- 1 or more -->
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <!-- library where the manuscript is-->
+                  <repository>Bibliothèque Nationale de France</repository>
+                  <!-- lieu de conservation -->
+                  <idno>Lat 7920</idno>
+                  <!-- manuscript coast -->
+                  <altIdentifier>
+                     <!-- optional -->
+                     <!-- old manuscript coast -->
+                     <idno/>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>
+                  <title/>
+                  <origDate notAfter-iso="1100" notBefore-iso="1000"/>
+                  <ptr target="0"/>
+               </head>
+
+            </msDesc>
+
+            <listWit n="manuscript">
+               <!-- list of manuscripts -->
+               <witness xml:id="A" corresp="#bnfLat7920">France, Paris, BnF, Lat 7920, <locus
+                     from="1" to="20" >fol.1-20</locus></witness>
+               <!-- item -->
+            </listWit>
+            <listWit n="edition">
+               <!-- list of edition -->
+               <witness xml:id="b" corresp="#bnfLat7920">France, Paris, BnF, Lat 7920, <locus
+                  from="1" to="20">fol.1-20</locus></witness>
+               <!-- item -->
+            </listWit>
+            
+
+            <listBibl>
+               <!-- Biblical -->
+               <head/>
+               <bibl xml:id="Jn">
+                  <!-- the id help making a link between the declaration here and the occurrences in the text -->
+                  <title/>
+                  <!-- optional -->
+               </bibl>
+            </listBibl>
+
+            <listBibl>
+               <!-- list of books -->
+               <head/>
+               <bibl xml:id="id2">
+                  <!-- the id help making a link between the declaration here and the occurrences in the text -->
+                  <author/>
+                  <title/>
+                  <editor/> 
+                  <pubPlace/>
+                  <publisher/>
+                  <date/>
+                  <note/>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <!-- adding informations about elements in the text as persons or places // indexes -->
+         <particDesc>
+            <listPerson>
+               <!-- different lists authorities - person -->
+               <person xml:id="person">
+                  <persName/>
+                  <note/>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="place">
+                  <!-- tag named country, cities, @type='inhabitant' -->
+                  <placeName/>
+                  <location/>
+                  <note/>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+      <encodingDesc>
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- methodology of the digital apparatus -->
+      </encodingDesc>
+      <revisionDesc>
+         <!-- informations about changes on the document -->
+         <change when-iso="01-01-2019"><name/><p/></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p><app>
+               <lem wit="#A #B">Hello</lem>
+               <rdg wit="#C">Bonjour</rdg>
+            </app><note>ghioj</note></p>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!DOCTYPE TEI SYSTEM "../session2/dtd.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sacramenta Argentariae</title>
+            <author>Nithardus</author>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName>Ariane Pinche</persName>
+            </respStmt>
+         </titleStmt>
+
+         <publicationStmt>
+            <p>XML TEI exercice</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Bibliothèque nationale de France</settlement>
+                  <idno>latin 9768</idno>
+                  <altIdentifier>
+                     <idno>Supplément latin 623</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Vatican: Reginensis 1964</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Petau: Q 50</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>
+                  <title>Nithardus, De dissensionibus filiorum Hludovici Pii libri quatuor (1-18r).
+                     Flodoardus Remensis,Annales (19v-46v).</title>
+                  <origDate notBefore="0900" notAfter="1000">Xe s.-XIe s. (Couderc, 1895 et Lauer,
+                     1905).</origDate>
+               </head>
+               <msContents>
+                  <msItemStruct n="1" xml:lang="lat">
+                     <locus from="1" to="18r"/>
+                     <author>Nithardus (0800?-0844)</author>
+                     <title>De dissensionibus filiorum Hludovici Pii libri quatuor</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItemStruct>
+                  <msItemStruct n="2" xml:lang="lat">
+                     <locus from="19v" to="46v"/>
+                     <author>Flodoardus (0894?-0966).</author>
+                     <title>Annales</title>
+                     
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>Parchemin</support>
+                        <extent>
+                           <dimensions scope="all">
+                              <width unit="mm">290</width>
+                              <height unit="mm">210</height>
+                           </dimensions>
+                        </extent>
+                        <foliation>46 feuillets</foliation>
+                        <collation></collation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="33"/>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="2">
+                     <handNote xml:id="hand1">
+                        <p><locus from="1" to="38"/>le copiste utilise le w, en capital dans les
+                           noms propres (ex. f. 28v Willelmus, Waldricus), tandis qu'il note avec
+                           deux u la forme minuscule du w, comme c'est le cas étrangement dans le
+                           nom du souverain Lodhuuuicus (sic, f. 13v) et dans les passages rédigés
+                           en langue vernaculaire (f. 13v)</p>
+                     </handNote>
+                     <handNote xml:id="hand2">
+                        <p><locus from="39" to="46"/>Le sixième et dernier cahier est dû à une
+                           seconde main travaillant au XIe s. ; il faut toutefois noter que le
+                           changement se produit à la 10e ligne du f. 39ra après le mot qualiter
+                           (éd. Lauer, 1905, p. 112, 4) et que de ce fait l'interruption à cet
+                           endroit est difficilement explicable. Bien qu'elle conserve autant que
+                           possible les principaux caractères de la première main, comme par ex. la
+                           lettre H capitale caractéristique en forme de K ou le A capital,
+                           l'écriture de la seconde main se distingue notamment par ses d
+                           minuscules, ses e cédillés et ses abréviations pour pro qui ont des
+                           formes différentes (voir Couderc, 1895, p. 721). </p>
+                     </handNote>
+                  </handDesc>
+                  <scriptDesc>
+                     <scriptNote>
+                        <p>Minuscule caroline tardive </p>
+                        <p>Petites initiales à l'encre avec rehauts de couleur verte. </p>
+                     </scriptNote>
+                  </scriptDesc>
+
+               </physDesc>
+               <history>
+                  <origin>Datée du Xe s. (Brunhölzl, 1991, p. 155), la copie remonte probablement à
+                     la toute fin de ce siècle, voire au commencement du suivant (Delisle, Cab. des
+                     ms. III, p. 266, qui avait révisé la datation donnée dans son Invent.). En
+                     effet, le ms. ne peut avoir été copié au IXe s. (cf. par ex. McKitterick, 1980,
+                     p. 32) pour la raison que l’œuvre de Nithard et le début de celle de Flodoard
+                     sont de la même main et que ce dernier a composé ses Annales jusqu'en 966,
+                     l'année de son décès. De plus, le sixième cahier est d'une écriture encore plus
+                     récente (Couderc, 1895, p. 721). Il s'agirait alors d'une réfection effectuée
+                     au XIe s. par la seconde main, qui copie les additions aux Annales pour les
+                     années 976-978 (f. 46).</origin>
+                  <provenance>Saint-Riquier ou Saint-Médard de Soissons</provenance>
+                  <acquisition>
+                     <p>la bibliothèque de l’abbaye de Saint-Magloire de Paris au début du XVe
+                        s.</p>
+                     <p>Le ms. passa de la bibliothèque de Saint-Magloire à celle du chanoine Jean
+                        de Saint-André, d'après une note de Claude Fauchet (1530–1601) au Vatican,
+                        Ottoboni 2537, f. 1r : «… Autre Flodoard, preste de Reims, a escrit des
+                        Annales depuis l'an 919 jusque l'an 966. L'original qui fut de
+                        Saint-Magloire est ès mains dudit de Saint-André et j'ai la coppie de saint
+                        Victor » (d'après Couderc, 1895, p. 723).</p>
+                     <p>Cette copie de Saint-Victor passée entre les mains de Claude Fauchet est
+                        l'actuelle compilation historique de Paris, Bnf, lat. 14663 (voir Lauer,
+                        1905, p. xxxi). Copié au XVe s., ce ms. contient en fin de volume les œuvres
+                        de Nithard (f. 279) et de Flodoard (f. 289) ; une note du copiste confirme
+                        la provenance de son modèle : « non plus reperi de ista cronica, quam habui
+                        de monasterio Sancti Maglorii Parisiensis, que ibidem reperitur scripta de
+                        littera vetustissima » (f. 289 ; voir Delisle, Cab. des mss., II, p. 258 n.
+                        1). </p>
+                     <p>Anciennement à la Bibliothèque de l'abbaye de Saint-Amand-en-Pévèle</p>
+                     <p>Au siècle suivant, il entra en possession de Paul Petau (1568-1614), dont le
+                        volume conserve la cote de sa bibliothèque « Q 50 » et l'ex-libris «
+                        Petavius » (f. 1). Il fît partie des mss. vendus par le fils de Petau à la
+                        reine Christine de Suède (1626-1689), puis, avec les autres mss. offerts par
+                        la souveraine, il entra à la Bibliothèque Vaticane, dont il porte la cote
+                        1964 au dos et sur le f. 1 (cote barrée). </p>
+                     <p>Estampille de la Bibliothèque nationale (1792-1802), modèle identique à
+                        Josserand-Bruno, p. 277, n° 17, sur laquelle a été surimprimée l’estampille
+                        de la Bibliothèque royale (Restauration 1814-1830), modèle proche de
+                        Josserand-Bruno, p. 281, n° 20.</p>
+                  </acquisition>
+               </history>
+               <additional>
+                  <listBibl>
+                     <head>Bibliography</head>
+                     
+                     <bibl>
+                        <author><forename>Leopold</forename>
+                           <surname>Delisle</surname></author><title>Inventaire des manuscrits
+                              latins …. Numéros 8823-18613</title><pubPlace>Paris</pubPlace>
+                        <date>1863-1871</date>
+                     </bibl>
+                    
+                     <bibl>
+                        <author><forename>Marie-Pierre</forename>
+                           <surname>Laffitte</surname></author>
+                        <title>"La Bibliothèque nationale et les "conquêtes artistiques" de la
+                           Révolution et de l'Empire : Les manuscrits d'Italie (1796-1815) ",
+                           Bulletin du bibliophile</title><num>2</num><date>1989</date><biblScope>
+                           p. 273-323</biblScope>
+                     </bibl>
+                     
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="Lod">
+                  <persName>Lodhuvicus</persName>
+                  <birth>806</birth>
+                  <death>876</death>
+                  <note>Louis (also Ludwig or Lewis) "the German", also known as Louis II, was the
+                     first king of East Francia, and ruled from 843-876 AD. Grandson of emperor
+                     Charlemagne and the third son of emperor of Francia, Louis the Pious and his
+                     first wife, Ermengarde of Hesbaye, he received the appellation Germanicus
+                     shortly after his death in recognition of Magna Germania of the Roman Empire,
+                     reflecting the Carolingian's assertions that they were the rightful descendants
+                     of the Roman Empire.</note>
+               </person>
+               <person xml:id="Karl">
+                  <persName>Karolus</persName>
+                  <birth>823</birth>
+                  <death>877</death>
+                  <note>Charles the Bald was the king of West Francia (843–877), king of Italy
+                     (875–877) and emperor of the Carolingian Empire (875–877). After a series of
+                     civil wars during the reign of his father, Louis the Pious, Charles succeeded
+                     by the Treaty of Verdun (843) in acquiring the western third of the Carolingian
+                     Empire. He was a grandson of Charlemagne and the youngest son of Louis the
+                     Pious by his second wife, Judith.</note>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="text" xml:lang="latin">
+            <div type="section" n="1">
+               <pb facs="https://gallica.bnf.fr/ark:/12148/btv1b84238417/f29.item.r" n="13r"/>
+               <cb n="b"/>
+               <p>C&u-um;&q-que; <persName ref="#Karl">Karolus</persName><lb/>haec ead&e-em; <choice>
+                     <orig>u</orig>
+                     <reg>v</reg>
+                  </choice>erba romana lingua &p-per;orass<choice>
+                     <abbr>&amp;</abbr>
+                     <expan>et</expan>
+                  </choice><pc><choice>
+                        <orig>.</orig>
+                        <reg>,</reg>
+                     </choice></pc><lb/><persName ref="#Lod">Lodhu&u-v;ic&apos-us;</persName>, quoniam maior natu erat<pc><choice>
+                        <orig>.</orig>
+                        <reg>,</reg>
+                     </choice></pc> prior<lb/>haec deinde se servaturum testatus est<pc><choice>
+                        <orig>.</orig>
+                        <reg> : </reg>
+                     </choice></pc><lb/>
+                  <said who="#Lod" xml:lang="roman">Pro Deo amur <choice>
+                        <abbr>&amp;</abbr>
+                        <expan>et</expan>
+                     </choice> pro christian poblo <choice>
+                        <abbr>&amp;</abbr>
+                        <expan>et</expan>
+                     </choice> nostro commun<lb/> salvament<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> dist di in avant, in quant Deus<lb/> savir <choice>
+                        <abbr>&amp;</abbr>
+                        <expan>et</expan>
+                     </choice> podir me dunat<choice>
+                        <orig>.</orig>
+                        <reg>,</reg>
+                     </choice> si salvaraeio<pc><choice>
+                           <orig>.</orig>
+                           <reg/>
+                        </choice></pc><lb/> cist meon fradre <persName ref="#Karl">Karlo</persName><pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc>
+                     <choice>
+                        <abbr>&amp;</abbr>
+                        <expan>et</expan>
+                     </choice> in adiudha<lb/>
+                     <choice>
+                        <abbr>&amp;</abbr>
+                        <expan>et</expan>
+                     </choice> in cadhuna cosa<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> si cum om per dreit son<lb/> fradra salvar dist<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> in o quid il mi altre<lb/>si faz<choice>
+                        <abbr>&amp;</abbr>
+                        <expan>et</expan>
+                     </choice> <choice>
+                        <orig>.</orig>
+                        <reg>;</reg>
+                     </choice> Et ab <persName ref="#Lod">Ludher</persName> nul plaid numquam<lb/> prindrai<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> qui meon vol<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> cist meon fradre<lb/>
+                     <persName ref="#Karl">Karle</persName> in damno sit.</said></p>
+               <p>Quod cum <persName ref="#Lod">Lodhuvicus</persName><lb/> explesset<pc><choice>
+                        <orig>.</orig>
+                        <reg>,</reg>
+                     </choice></pc>
+                  <persName ref="#Karl">Karolus</persName> teudisca lingua sic hec<lb/> eadem verba
+                  testatus est <choice>
+                     <orig>.</orig>
+                     <reg>:</reg>
+                  </choice><lb/>
+                  <said xml:lang="german" who="#Karl">In Godes minna ind in thes christianes
+                     folches<lb/> ind unser bedhero gealtnissi<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> fon these<lb/>mo dage frammordes<pc type="reg">,</pc>so fram
+                     so mir Got<lb/> gewizci indi madh furgibit<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> so haldih tes<lb/> an minan bruodher<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> soso man mit rehtu<lb/> sinan bruodher scal<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> in thiu<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> thaz er mig soso<lb/>ma duo <choice>
+                        <orig>.</orig>
+                        <reg>;</reg>
+                     </choice> indi mit <persName ref="#Lod">Ludheren</persName> in nohheiniu
+                     t<lb/>hing ne geganga<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> the minan willon imo<lb/> ce scadhen werhen</said>.</p>
+            </div>
+            <div type="section" n="2">
+               <p>Sacramentum autem quod utrorumque populus<lb/> quique propria lingua<pc><choice>
+                        <orig>.</orig>
+                        <reg>,</reg>
+                     </choice></pc> testatus est<pc><choice>
+                        <orig>.</orig>
+                        <reg>,</reg>
+                     </choice></pc><lb/> Romana lingua sic se hab<choice>
+                     <abbr>&amp;</abbr>
+                     <expan>et</expan>
+                  </choice> <choice>
+                     <reg>:</reg>
+                     <orig>.</orig>
+                  </choice>
+                  <quote xml:lang="roman">Si <persName ref="#Lod">Lodhu<lb/>vigs</persName> sagrament<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> quae son fradre <persName ref="#Karl">Karlo</persName><lb/> iurat<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> conservat<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc>
+                     <choice>
+                        <abbr>&amp;</abbr>
+                        <expan>et</expan>
+                     </choice>
+                     <persName ref="#Karl">Karlus</persName> meos sendra<lb/> de suo part lo stanit<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> si io returnar non<lb/> lint pois<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> ne io ne neuls cui eo returnar<lb/> int pois<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> in nulla aiudha contra <persName ref="#Lod"
+                        >Lodhu<lb/>wig</persName> nun li iver</quote>.</p>
+               <p>Teudisca autem lingua <choice>
+                     <orig>.</orig>
+                     <reg>:</reg>
+                  </choice>
+                  <pb facs="https://gallica.bnf.fr/ark:/12148/btv1b84238417/f30.item" n="13v"/>
+                  <cb n="c"/>
+                  <quote xml:lang="german">Oba <persName ref="#Karl">Karl</persName> then eid<pc
+                        type="reg">,</pc> then er sineno bruodher<lb/><persName ref="#Lod"
+                        >Ludhuwige</persName> gesuor<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> geleistit<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> indi <persName ref="#Lod">Lud<lb/>huwig</persName> min herro
+                     then er imo gesuor<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> forbrih<lb/>chit<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> ob ih inan es irwenden ne mag<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc> noh<lb/> ih noh thero nohhein then ih es irwenden mag<pc><choice>
+                           <orig>.</orig>
+                           <reg>,</reg>
+                        </choice></pc><lb/> widhar <persName ref="#Karl">Karle</persName> imo ce
+                     follusti ne wirdhic</quote>.<lb/></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

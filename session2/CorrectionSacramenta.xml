@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sacramenta Argentariae</title>
+            <author>Nithardus</author>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName>Ariane Pinche</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>XML TEI exercice</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Transcription from https://fr.wikisource.org/wiki/Serments_de_Strasbourg</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="lod">
+                  <persName>Lodhuvicus</persName>
+                  <note>text here</note>
+               </person>
+               <person xml:id="karl">
+                  <persName>Karolus</persName>
+                  <note>text here</note>
+               </person>
+            </listPerson>
+         </particDesc>
+
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="text" xml:lang="latin">
+            <div type="section" n="1">
+               <p>Cumque <persName ref="#karl">Karolus</persName> haec eadem verba romana lingua perorasset,
+                     <persName ref="#lod">Lodhuvicus</persName>, quoniam maior natu erat, prior haec deinde se
+                  servaturum testatus est : <said who="#lod" xml:lang="roman">« Pro Deo amur
+                     et pro christian poblo et nostro commun salvament, dist di in avant, in quant
+                     Deus savir et podir me dunat, si salvaraeio cist meon fradre
+                        <persName ref="#karl">Karlo</persName>, et in adiudha et in cadhuna cosa, si cum om per
+                     dreit son fradra salvar dist, in o quid il mi altresi fazet ; et ab
+                        <persName ref="#lod">Ludher</persName> nul plaid numquam prindrai, qui meon vol, cist
+                     meon fradre <persName ref="#karl">Karle</persName> in damno sit. »</said></p>
+               <p>Quod cum <persName ref="#lod">Lodhuvicus</persName> explesset, <persName>Karolus</persName>
+                  teudisca lingua sic hec eadem verba testatus est : <said xml:lang="german"
+                     who="#karl">In Godes minna ind in thes christianes folches ind unser bedhero
+                     gealtnissi, fon thesemo dage frammordes, so fram so mir Got gewizci indi mahd
+                     furgibit, so haldih tesan minan bruodher, soso man mit rehtu sinan bruodher
+                     scal, in thiu, thaz er mig sosoma duo ; indi mit <persName ref="#lod">Ludheren</persName>
+                     in nohheiniu thing ne geganga, the minan willon imo ce scadhen
+                  werhen</said>.</p>
+            </div>
+            <div type="section" n="2">
+               <p>Sacramentum autem quod utrorumque populus, quique propria lingua, testatus est,
+                  romana lingua sic se habet : <said xml:lang="roman" who="Lodhuvicus">Si
+                        <persName>Lodhuvigs</persName> sagrament, quae son fradre
+                        <persName>Karlo</persName> iurat, conservat, et <persName>Karlus</persName>
+                     meos sendra de suo part lo stanit, si io returnar non lint pois, ne io ne neuls
+                     cui eo returnar int pois, in nulla aiudha contra <persName>Lodhuwig</persName>
+                     nun li iver</said>.</p>
+               <p>Teudisca autem lingua : <said xml:lang="german" who="Karolus">Oba
+                        <persName>Karl</persName> then eid, then er sineno bruodher
+                        <persName>Ludhuwige</persName> gesuor, geleistit, indi
+                        <persName>Ludhuwig</persName> min herro then er imo gesuor, forbrihchit, ob
+                     ih inan es irwenden ne mag, noh ih noh thero nohhein then ih es irwenden mag,
+                     widhar <persName>Karle</persName> imo ce follusti ne wirdhic</said>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
